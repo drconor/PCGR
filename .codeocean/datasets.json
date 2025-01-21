@@ -1,0 +1,17 @@
+{
+	"version": 1,
+	"attached_datasets": [
+		{
+			"id": "3c063009-5957-4c3e-bc68-96050c310af3",
+			"mount": "VEP_Cache"
+		},
+		{
+			"id": "dbc62705-cdb3-4ca5-8119-53276281fd14",
+			"mount": "Reference_Bundle"
+		},
+		{
+			"id": "f8ad4758-48d0-4f26-baed-acaa661c76be",
+			"mount": "Sample_VCF"
+		}
+	]
+}

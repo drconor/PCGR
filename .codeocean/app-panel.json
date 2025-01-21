@@ -1,0 +1,94 @@
+{
+	"version": 1,
+	"datasets": [
+		{
+			"id": "f8ad4758-48d0-4f26-baed-acaa661c76be",
+			"name": "Tumour-Normal VCF ",
+			"description": "VCF to generate report on"
+		}
+	],
+	"parameters": [
+		{
+			"id": "DFo3KbBVFG9w8UTY",
+			"name": "Sample ID",
+			"description": "Sample ID ",
+			"help_text": "Give your sample a name for the report",
+			"type": "text",
+			"value_type": "string",
+			"default_value": "SampleID"
+		},
+		{
+			"id": "1Lo3vOFNMjsWiX4f",
+			"name": "Tumour Site",
+			"description": "PCGR Tumour Site",
+			"help_text": "This option takes a value between 0 and 30, reflecting the main primary sites/tissues for human cancers. This information is used e.g. to discriminate between on and off-label targeted therapies from the actionable biomarkers detected in the sample. Note that the default value is 0 (implies Any tissue/site), which essentially prohibits the presence of tier 1 variants occurring in the report. \u003cbr /\u003e\n\n\n0 = Any \u003cbr /\u003e\n1 = Adrenal Gland \u003cbr /\u003e\n2 = Ampulla of Vater \u003cbr /\u003e\n3 = Biliary Tract \u003cbr /\u003e\n4 = Bladder/Urinary Tract \u003cbr /\u003e\n5 = Bone \u003cbr /\u003e\n6 = Breast \u003cbr /\u003e\n7 = Cervix \u003cbr /\u003e\n8 = CNS/Brain \u003cbr /\u003e\n9 = Colon/Rectum \u003cbr /\u003e\n10 = Esophagus/Stomach \u003cbr /\u003e\n11 = Eye \u003cbr /\u003e\n12 = Head and Neck \u003cbr /\u003e\n13 = Kidney \u003cbr /\u003e\n14 = Liver \u003cbr /\u003e\n15 = Lung \u003cbr /\u003e\n16 = Lymphoid \u003cbr /\u003e\n17 = Myeloid \u003cbr /\u003e\n18 = Ovary/Fallopian Tube \u003cbr /\u003e\n19 = Pancreas \u003cbr /\u003e\n20 = Peripheral Nervous System \u003cbr /\u003e\n21 = Peritoneum \u003cbr /\u003e\n22 = Pleura \u003cbr /\u003e\n23 = Prostate \u003cbr /\u003e\n24 = Skin \u003cbr /\u003e\n25 = Soft Tissue \u003cbr /\u003e\n26 = Testis \u003cbr /\u003e\n27 = Thymus \u003cbr /\u003e\n28 = Thyroid \u003cbr /\u003e\n29 = Uterus \u003cbr /\u003e\n30 = Vulva/Vagina \u003cbr /\u003e\n(default: 0 - any tumor type)",
+			"type": "list",
+			"value_type": "string",
+			"default_value": "6",
+			"extra_data": [
+				"1",
+				"2",
+				"3",
+				"4",
+				"5",
+				"6",
+				"7",
+				"8",
+				"9",
+				"10",
+				"11",
+				"12",
+				"13",
+				"14",
+				"15",
+				"16",
+				"17",
+				"18",
+				"19",
+				"20",
+				"21",
+				"22",
+				"23",
+				"24",
+				"25",
+				"26",
+				"27",
+				"28",
+				"29",
+				"30"
+			]
+		},
+		{
+			"id": "ZQIlOcvBx84W5w6s",
+			"name": "Tumour Purity",
+			"description": " Estimated tumor purity",
+			"type": "text",
+			"value_type": "integer",
+			"default_value": "1",
+			"maximum": 1
+		},
+		{
+			"id": "UBV8R16NeaxDmdzz",
+			"name": "Tumour Ploidy",
+			"description": "Estimated tumor ploidy",
+			"type": "text",
+			"value_type": "number",
+			"default_value": "2",
+			"minimum": 2,
+			"maximum": 20
+		},
+		{
+			"id": "xuM0rOzc1dtPMoF1",
+			"name": "Assay Type",
+			"description": "Select Whole-genome, whole-exome or targeted sequencing assay",
+			"type": "list",
+			"value_type": "string",
+			"default_value": "WGS",
+			"extra_data": [
+				"WGS",
+				"WES",
+				"TARGETED"
+			]
+		}
+	]
+}

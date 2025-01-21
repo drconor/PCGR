@@ -1,0 +1,11 @@
+metadata_version: 1
+name: Personal Cancer Genome Reporter
+description: The Personal Cancer Genome Reporter (PCGR) is a stand-alone software
+  package for functional annotation and translation of individual tumor genomes for
+  precision cancer medicine. It interprets primarily somatic SNVs/InDels and copy
+  number aberrations, and has additional support for interpretation of bulk RNA-seq
+  expression data. The software classifies variants both with respect to oncogenicity,
+  and actionability. Interactive HTML output reports allow the user to interrogate
+  the clinical impact of the molecular findings in an individual tumor.
+authors:
+- name: Conor Mohan

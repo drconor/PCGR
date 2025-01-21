@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+set -e
+
+# set up variables
+PCGR_VERSION="2.1.2"
+PCGR_REPO="https://raw.githubusercontent.com/sigven/pcgr/v${PCGR_VERSION}/conda/env/lock/"
+PLATFORM="linux"
+# create conda envs in local directory
+
+conda create --prefix ./pcgr_conda/pcgr --file ${PCGR_REPO}/pcgr-${PLATFORM}-64.lock
+conda create --prefix ./pcgr_conda/pcgrr --file ${PCGR_REPO}/pcgrr-${PLATFORM}-64.lock
