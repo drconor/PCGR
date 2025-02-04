@@ -1,7 +1,9 @@
 # test that it works
 pcgr --version
 
-sample_vcf=$(find -L ../data/Sample_VCF/ -name "*.somatic.vcf.gz")
+sample_vcf=$(find -L ../data/ -name "*_somatic.vcf.gz" -o -name "*.somatic.vcf.gz" )
+refdata_dir=$(find -L ../data/ -type d -name "Reference_Bundle")
+vep_dir=$(find -L ../data/ -type d -name "VEP_Cache")
 
 echo User settings:
 echo Input VCF:- "$sample_vcf"
@@ -13,9 +15,10 @@ echo Assay:- "$5"
 
 echo Launching PCGR...
 
+
 pcgr \
-    --refdata_dir ../data/Reference_Bundle/    \
-    --vep_dir ../data/VEP_Cache/    \
+    --refdata_dir "$refdata_dir"    \
+    --vep_dir "$vep_dir"    \
     --output_dir ../results     \
     --input_vcf "$sample_vcf" \
     --sample_id "$1"    \
