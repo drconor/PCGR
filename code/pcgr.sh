@@ -2,11 +2,14 @@
 pcgr --version
 
 sample_vcf=$(find -L ../data/ -name "*_somatic.vcf.gz" -o -name "*.somatic.vcf.gz" )
-refdata_dir=$(find -L ../data/ -type d -name "Reference_Bundle")
-vep_dir=$(find -L ../data/ -type d -name "VEP_Cache")
+refdata_dir=$(find -L ../data/ -type d -name "grch38_reference")
+vep_dir=$(find -L ../data/ -type d -name "grch38_VEP")
 
 echo User settings:
 echo Input VCF:- "$sample_vcf"
+echo Refernce Directory:- "$refdata_dir"
+echo VEP Cache: "$vep_dir"
+
 echo Sample ID:- "$1"
 echo Tumour Site:- "$2"
 echo Tumour Purity:- "$3"
