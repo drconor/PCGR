@@ -15,7 +15,8 @@
 			"help_text": "Give your sample a name for the report",
 			"type": "text",
 			"value_type": "string",
-			"default_value": "SampleID"
+			"default_value": "SampleID",
+			"required": true
 		},
 		{
 			"id": "1Lo3vOFNMjsWiX4f",
@@ -25,6 +26,7 @@
 			"type": "list",
 			"value_type": "string",
 			"default_value": "6",
+			"required": true,
 			"extra_data": [
 				"1",
 				"2",
@@ -84,6 +86,7 @@
 			"type": "list",
 			"value_type": "string",
 			"default_value": "WGS",
+			"required": true,
 			"extra_data": [
 				"WGS",
 				"WES",
