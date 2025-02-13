@@ -1,7 +1,7 @@
 # test that it works
 pcgr --version
 
-sample_vcf=$(find -L ../data/ -name "*marked_duplicates_BQSR_somatic.vcf.gz" -o -name "*.somatic.vcf.gz" )
+sample_vcf=$(find -L ../data/ -name "*marked_duplicates_BQSR_somatic.vcf.gz")
 refdata_dir=$(find -L ../data/ -type d -name "grch38_reference")
 vep_dir=$(find -L ../data/ -type d -name "grch38_VEP")
 
